@@ -12,7 +12,8 @@ use Illuminate\Support\Str;
 
 class AuthController extends Controller
 {
-    // REGISTER
+    //register
+
     public function register(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -66,7 +67,6 @@ class AuthController extends Controller
         ]);
     }
 
-    // SOCIAL LOGIN (المعدلة لتجنب الأخطاء)
     public function socialLogin(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -98,7 +98,6 @@ class AuthController extends Controller
         ]);
     }
 
-    // LOGOUT
     public function logout(Request $request)
     {
    
